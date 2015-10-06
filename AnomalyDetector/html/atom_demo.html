@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang='en'> 
+<head> 
+<title>Atom Demo</title>  <meta charset='utf-8' > 
+</head> 
+<body> 
+<h1>CloudWatch-ATOM Demo</h1>
+<h2>Select file first, then click buttons to see the steaming data.</h2>
+<p><a href="Chlorine1.txt" download="atomSample.txt">Sample File Download</a> (Modify some values and see if ATOM could detect.)</p>
+
+
+<script>
+    var attributes = {codebase:'file:*',
+                      code:'AtomApplet.class',
+                      archive: '../bin/atom_demo.jar',
+                      width: '800', 
+                      height: '1500'};
+var parameters = { fontSize:16, permissions:'all-permissions' };
+    var version = '1.7' ; // JDK version
+    deployJava.runApplet(attributes, parameters, version);
+</script>  
+
+<object type="application/x-java-applet" height="1500" width="800">
+  <param name="code" value="AtomApplet" />
+  <param name="archive" value="../bin/atom_demo.jar, ../bin/pcaType.jar, ../bin/dataGen.jar, ../bin/tracker.jar, ../bin/jfreechart-0.9.21.jar, ../bin/jcommon-0.9.6.jar, ../bin/comm.jar, ../bin/weka.jar" />
+  Applet failed to run.  No Java plug-in was found.
+</object>
+
+</body> 
+</html>
+
